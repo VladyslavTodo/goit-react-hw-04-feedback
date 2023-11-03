@@ -3,9 +3,7 @@ import React from 'react';
 import { Card, Wrapper } from './Statistics.styled';
 
 const Statistics = ({
-  good,
-  neutral,
-  bad,
+  options:{good, neutral, bad},
   countTotalFeedback,
   countPositiveFeedbackPercentage,
 }) => (
@@ -22,9 +20,7 @@ const Statistics = ({
 );
 
 Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
+  options: PropTypes.object.isRequired,
   countTotalFeedback: PropTypes.func.isRequired,
   countPositiveFeedbackPercentage: PropTypes.func.isRequired,
 };

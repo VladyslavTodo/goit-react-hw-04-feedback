@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding-bottom: 70px;
 `;
 
 export const Button = styled.button`
